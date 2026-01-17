@@ -1,0 +1,47 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title LUXORIDES
+        link(rel="stylesheet" href="assets/css/main.min.css")
+    body.d-flex.flex-column.min-vh-100
+        header.js-header.sticky-top.border-bottom.border-secondary.bg-white
+            nav.navbar.navbar-expand-lg
+                div.container-xl.flex-nowrap
+                    a.navbar-brand(href="#")
+                        img.img-fluid(src="assets/images/logo.svg" width="113" height="39" alt="Логотип")
+                    button.navbar-toggler.order-1.ms-2.ms-sm-3(type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Меню")
+                        span.navbar-toggler-icon
+                    div.offcanvas.offcanvas-end(tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel")
+                        div.offcanvas-header
+                            div.h3.fw-bold.mb-0(id="offcanvasNavbarLabel") Меню
+                            button.btn.btn-close.text-reset(data-bs-dismiss="offcanvas" aria-label="Close")
+                        div.offcanvas-body
+                            div.d-lg-none
+                                div.d-flex.justify-content-center
+                                    a(href="#")
+                                        img.img-fluid(src="assets/images/logo.svg" width="113" height="39" alt="Логотип" loading="lazy")
+                                hr.opacity-100.mt-4
+                            ul.navbar-nav.column-gap-lg-5.mx-auto.mb-0
+                                li.nav-item
+                                    a.nav-link(href="#") Главная
+                                li.nav-item
+                                    a.nav-link(href="#") Автомобили
+                                li.nav-item
+                                    a.nav-link(href="#") Бронирование
+
+        main.flex-grow-1
+            block main
+
+        footer.bg-white.border-top.border-secondary.py-4.mt-5
+            div.container-xl.d-flex.flex-wrap.justify-content-between.align-items-center.gap-3
+                div
+                    a(href="#")
+                        img.img-fluid(src="assets/images/logo.svg" width="113" height="39" alt="Логотип" loading="lazy")
+                div.lh-sm
+                    div.mb-3 Все права защищены
+
+        script(src="assets/js/vendors.min.js")
+        script(src="assets/js/main.min.js")

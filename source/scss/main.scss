@@ -1,0 +1,65 @@
+@import "fonts";
+@import "bootstrap";
+
+@import "node_modules/swiper/swiper";
+@import "node_modules/swiper/modules/navigation";
+@import "node_modules/swiper/modules/pagination";
+@import "node_modules/swiper/modules/free-mode";
+@import "node_modules/swiper/modules/grid";
+
+@import "mixins";
+@import "colored-links";
+@import "welcome";
+
+.icon {
+    --icon-width: 1em;
+    --icon-height: 1em;
+    display: inline-block;
+    vertical-align: middle;
+    fill: currentColor;
+    width: var(--icon-width);
+    height: var(--icon-height);
+}
+
+a {
+    text-underline-offset: .25em;
+}
+
+header {
+    .navbar {
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    --bs-nav-link-font-size: 1.125rem;
+                    @include link-underline-anim($primary, 1px, var(--bs-navbar-nav-link-padding-x), var(--bs-nav-link-padding-y));
+
+                    @include media-breakpoint-down(lg) {
+                        --bs-navbar-nav-link-padding-x: 0rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.letter-spacing-96 {
+    letter-spacing: 0.96px;
+}
+
+.form-section {
+    position: relative;
+
+    @include media-breakpoint-up(lg) {
+        min-height: 600px;
+    }
+
+    .form-section-img-wrapper {
+        @include media-breakpoint-up(lg) {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 40%;
+            z-index: -1;
+        }
+    }
+}

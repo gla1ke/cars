@@ -1,0 +1,181 @@
+extends base.pug
+
+block main
+    section.welcome
+        div.container-xl
+            div
+                img.welcome-image.img-fluid(src="assets/images/welcome-bg.webp" alt="Аренда премиальных автомобилей" width="1920" height="705" loading="lazy")
+            div.col-lg-10
+                h1.fw-bold.mb-4 Аренда премиальных автомобилей
+                div.col-lg-6.mb-5 В нашем клубе имеется солидная коллекция спортивных автомобилей — от достаточно распространенных серийных машин до настоящего гоночного эксклюзива. Воспользуйтесь уникальной возможностью побывать за рулем настоящей легенды и узнать, на что она способна за пределами гоночной трассы!
+                button.btn.btn-primary.text-uppercase Посмотреть автомобили
+    section.my-100
+        div.container-xl
+            div.col-lg-8.mb-4
+                h2 Наш автопарк
+            div.row.row-cols-1.row-cols-sm-2.row-cols-lg-3.gy-4
+                div.col
+                    div.d-flex.flex-column.row-gap-3.h-100
+                        div
+                            img.w-100.img-fluid(src="assets/images/product-1.webp" alt="" width="384" height="246" loading="lazy")
+                        div.fs-4.text-center Lamborghini Huracan Spyder
+                        div.d-flex.justify-content-between.gap-3.px-12
+                            div.d-flex.flex-column.align-items-center.text-center.gap-2
+                                svg.icon.fs-36
+                                    use(xlink:href="assets/icons/sprite.svg#gear")
+                                div
+                                    div.fw-bold Привод
+                                    div полный
+                            div.d-flex.flex-column.align-items-center.text-center.gap-2
+                                svg.icon.fs-36
+                                    use(xlink:href="assets/icons/sprite.svg#wheel")
+                                div
+                                    div.fw-bold Двигатель
+                                    div 5.2 л.с.
+                            div.d-flex.flex-column.align-items-center.text-center.gap-2
+                                svg.icon.fs-36
+                                    use(xlink:href="assets/icons/sprite.svg#belt")
+                                div
+                                    div.fw-bold Кол-во мест
+                                    div 2
+                        button.btn.btn-primary.text-uppercase.w-100.mt-auto ЗАбронировать
+                div.col
+                    div.d-flex.flex-column.row-gap-3.h-100
+                        div
+                            img.w-100.img-fluid(src="assets/images/product-2.webp" alt="" width="384" height="246" loading="lazy")
+                        div.fs-4.text-center Chevrolet Corvette
+                        div.d-flex.justify-content-between.gap-3.px-12
+                            div.d-flex.flex-column.align-items-center.text-center.gap-2
+                                svg.icon.fs-36
+                                    use(xlink:href="assets/icons/sprite.svg#gear")
+                                div
+                                    div.fw-bold Привод
+                                    div полный
+                            div.d-flex.flex-column.align-items-center.text-center.gap-2
+                                svg.icon.fs-36
+                                    use(xlink:href="assets/icons/sprite.svg#wheel")
+                                div
+                                    div.fw-bold Двигатель
+                                    div 6.2 л.с.
+                            div.d-flex.flex-column.align-items-center.text-center.gap-2
+                                svg.icon.fs-36
+                                    use(xlink:href="assets/icons/sprite.svg#belt")
+                                div
+                                    div.fw-bold Кол-во мест
+                                    div 2
+                        button.btn.btn-primary.text-uppercase.w-100.mt-auto ЗАбронировать
+                div.col
+                    div.d-flex.flex-column.row-gap-3.h-100
+                        div
+                            img.w-100.img-fluid(src="assets/images/product-3.webp" alt="" width="384" height="246" loading="lazy")
+                        div.fs-4.text-center Ferrari California
+                        div.d-flex.justify-content-between.gap-3.px-12
+                            div.d-flex.flex-column.align-items-center.text-center.gap-2
+                                svg.icon.fs-36
+                                    use(xlink:href="assets/icons/sprite.svg#gear")
+                                div
+                                    div.fw-bold Привод
+                                    div полный
+                            div.d-flex.flex-column.align-items-center.text-center.gap-2
+                                svg.icon.fs-36
+                                    use(xlink:href="assets/icons/sprite.svg#wheel")
+                                div
+                                    div.fw-bold Двигатель
+                                    div 3.9 л.с.
+                            div.d-flex.flex-column.align-items-center.text-center.gap-2
+                                svg.icon.fs-36
+                                    use(xlink:href="assets/icons/sprite.svg#belt")
+                                div
+                                    div.fw-bold Кол-во мест
+                                    div 4
+                        button.btn.btn-primary.text-uppercase.w-100.mt-auto ЗАбронировать
+                div.col
+                    div.d-flex.flex-column.row-gap-3.h-100
+                        div
+                            img.w-100.img-fluid(src="assets/images/product-4.webp" alt="" width="384" height="246" loading="lazy")
+                        div.fs-4.text-center Lamborghini Urus
+                        div.d-flex.justify-content-between.gap-3.px-12
+                            div.d-flex.flex-column.align-items-center.text-center.gap-2
+                                svg.icon.fs-36
+                                    use(xlink:href="assets/icons/sprite.svg#gear")
+                                div
+                                    div.fw-bold Привод
+                                    div полный
+                            div.d-flex.flex-column.align-items-center.text-center.gap-2
+                                svg.icon.fs-36
+                                    use(xlink:href="assets/icons/sprite.svg#wheel")
+                                div
+                                    div.fw-bold Двигатель
+                                    div 4.0 л.с.
+                            div.d-flex.flex-column.align-items-center.text-center.gap-2
+                                svg.icon.fs-36
+                                    use(xlink:href="assets/icons/sprite.svg#belt")
+                                div
+                                    div.fw-bold Кол-во мест
+                                    div 5
+                        button.btn.btn-primary.text-uppercase.w-100.mt-auto ЗАбронировать
+                div.col
+                    div.d-flex.flex-column.row-gap-3.h-100
+                        div
+                            img.w-100.img-fluid(src="assets/images/product-5.webp" alt="" width="384" height="246" loading="lazy")
+                        div.fs-4.text-center Lamborghini Audi R8
+                        div.d-flex.justify-content-between.gap-3.px-12
+                            div.d-flex.flex-column.align-items-center.text-center.gap-2
+                                svg.icon.fs-36
+                                    use(xlink:href="assets/icons/sprite.svg#gear")
+                                div
+                                    div.fw-bold Привод
+                                    div полный
+                            div.d-flex.flex-column.align-items-center.text-center.gap-2
+                                svg.icon.fs-36
+                                    use(xlink:href="assets/icons/sprite.svg#wheel")
+                                div
+                                    div.fw-bold Двигатель
+                                    div 5.2 л.с.
+                            div.d-flex.flex-column.align-items-center.text-center.gap-2
+                                svg.icon.fs-36
+                                    use(xlink:href="assets/icons/sprite.svg#belt")
+                                div
+                                    div.fw-bold Кол-во мест
+                                    div 2
+                        button.btn.btn-primary.text-uppercase.w-100.mt-auto ЗАбронировать
+                div.col
+                    div.d-flex.flex-column.row-gap-3.h-100
+                        div
+                            img.w-100.img-fluid(src="assets/images/product-6.webp" alt="" width="384" height="246" loading="lazy")
+                        div.fs-4.text-center Chevrolet Camaro
+                        div.d-flex.justify-content-between.gap-3.px-12
+                            div.d-flex.flex-column.align-items-center.text-center.gap-2
+                                svg.icon.fs-36
+                                    use(xlink:href="assets/icons/sprite.svg#gear")
+                                div
+                                    div.fw-bold Привод
+                                    div полный
+                            div.d-flex.flex-column.align-items-center.text-center.gap-2
+                                svg.icon.fs-36
+                                    use(xlink:href="assets/icons/sprite.svg#wheel")
+                                div
+                                    div.fw-bold Двигатель
+                                    div 2.0 л.с.
+                            div.d-flex.flex-column.align-items-center.text-center.gap-2
+                                svg.icon.fs-36
+                                    use(xlink:href="assets/icons/sprite.svg#belt")
+                                div
+                                    div.fw-bold Кол-во мест
+                                    div 4
+                        button.btn.btn-primary.text-uppercase.w-100.mt-auto ЗАбронировать
+    section.form-section.mt-100
+        div.container-xl
+            div.col-lg-9.mb-4
+                h2 Узнать цену и забронировать
+                div Заполните данные, и мы перезвоним вам для уточнения всех деталей бронирования
+            div.row
+                div.col-md-4
+                    form
+                        input.form-control.mb-3(type="text" name="name" placeholder="Ваше имя")
+                        input.form-control.mb-3(type="tel" name="phone" placeholder="Ваш телефон")
+                        textarea.form-control.mb-3(name="message" placeholder="Сообщение")
+                        button.btn.btn-primary.text-uppercase.w-100 Узнать цену
+                div.col-md-8.d-none.d-md-block
+                    div.form-section-img-wrapper
+                        img.img-fluid(src="assets/images/rolls.webp" alt="Аренда премиальных автомобилей" width="942" height="445" loading="lazy")
