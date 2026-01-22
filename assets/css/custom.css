@@ -1,7 +1,12 @@
 header .navbar .navbar-nav .nav-item .nav-link {
-    font-size: 1rem;
+    --bs-nav-link-font-size: 1rem;
 }
 
 .custom-gray {
     color: #5D5D5F;
+}
+
+.form-control {
+    color: #5D5D5F !important;
+    border-color: #5D5D5F !important;
 }
